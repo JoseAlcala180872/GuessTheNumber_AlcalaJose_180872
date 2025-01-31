@@ -13,11 +13,9 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="170dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="170dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="156dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_eyeball" />
 
@@ -25,24 +23,75 @@
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="196dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="196dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="154dp"
         android:background="@color/white"
         android:padding="8dp"
         android:text="The Eye"
         android:textColor="@color/teal_700"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
         android:id="@+id/guessings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="48dp"
+        android:background="@color/white"
         android:text="Tap to generate to start"
-        app:layout_constraintTop_toBottomOf="@+id/title"
-        tools:layout_editor_absoluteX="172dp" />
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <Button
+        android:id="@+id/down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="117dp"
+        android:layout_marginEnd="101dp"
+        android:backgroundTint="@color/mustard"
+        android:text="down"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/up"
+        app:layout_constraintTop_toBottomOf="@+id/guessings" />
+
+    <Button
+        android:id="@+id/up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="117dp"
+        android:layout_marginEnd="68dp"
+        android:backgroundTint="@color/mustard"
+        android:text="up"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guessings" />
+
+    <Button
+        android:id="@+id/generate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="162dp"
+        android:text="Generate"
+        android:backgroundTint="@color/orange"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guessings" />
+
+    <Button
+        android:id="@+id/guessed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="132dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="Guessed"
+        android:textSize="25sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/generate" />
 </androidx.constraintlayout.widget.ConstraintLayout>
